@@ -1,0 +1,59 @@
+1. Introduzione
+
+1.
+  1.1 Propositi
+
+Il proposito di questo documento è quello di specificare i requisiti dell'applicazione Progetto-TPI da noi creata per facilitarne
+la realizzazione e la documentazione. Questo documento è redatto seguendo le indicazioni contenute nel documento IEEE Std 830-1993.
+
+1.
+  1.2 Obbiettivi
+
+Il nostro obbiettivo è quello di creare un'applicazione che fonda le nostre conoscenze del linguaggio HTML5 e di due API 
+rispettivamente inerenti a mappe e meteo. L'utente può cercare una città mediante una barra di ricerca e la mappa si posizionerà
+su quel luogo, successivamente vengono fornite informazioni riguardanti il meteo della città scelta mediante una tabella. 
+Ad esempio, se la città scelta è Brescia, verranno visualizzati dati come la temperatura (massima e minima), umidità, velocità 
+del vento e nuvolosità.
+
+1.
+  1.3 Riferimenti
+
+Le API utilizzate possono essere reperite al seguente link:
+
+[https://leafletjs.com/reference-1.6.0.html](https://leafletjs.com/reference-1.6.0.html)
+
+1.
+  1.4 Panoramica
+
+La restante parte di questo documento contiene una descrizione dettagliata e approfondita delle funzionalità richieste secondo
+gli obiettivi espressi al punto 1.2.
+
+1. Descrizione generale
+
+2.1 Prospettive del progetto
+
+        Il software è autonomo e concepito per fini didattici.
+
+2.2 Funzionalità del prodotto
+
+ Il software Progetto-TPI deve:
+
+- Visualizzare la mappa;
+- Far scegliere la città da visualizzare;
+- Dare informazioni sulla temperatura attuale della città;
+- Dare informazioni sulla temperatura minima della città;
+- Dare informazioni sulla temperatura massima della città;
+- Dare informazioni sul grado di umidità della città;
+- Dare informazioni sulla presenza di nuvole sulla città.
+
+2.3 Caratteristiche utente
+
+Il sistema software Progetto-TPI è rivolto ad un'utenza ampia senza necessariamente con conoscenze in ambito informatico.
+
+ 2.4 Vincoli
+
+L'unico vincolo imposto dal software è quello di indicare la città del quale avere le informazioni metereologiche.
+
+ 2.5 Assunzioni e dipendenze
+
+  Il software funziona su tutti i browser di ultima generazione e ovviamente, su qualsiasi tipo   di sistema operativo.

@@ -13,7 +13,7 @@ Ogni gruppo definisce un titolo progetto (< 100 caratteri) e una descrizione( <5
 
 
 ## Partecipanti
-Elenco partecipanti
+Begni Andrea, Bacci Isabella, Astori Michele
 
 ## Ruoli
 

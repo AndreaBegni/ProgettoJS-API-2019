@@ -17,10 +17,10 @@ Elenco partecipanti
 
 ## Ruoli
 
-* PROJECT_MANAGER = 
-* DOCUMENTAZIONE = 
-* CODING JS
-* CODING UI
+* PROJECT_MANAGER = Bacci Isabella
+* DOCUMENTAZIONE = Astori Michele
+* CODING JS = Begni Andrea
+* CODING UI = Bacci Isabella, Astori Michele, Begni Andrea
 
 ## Regolamento
 * Ogni gruppo consegnerà il link ad un repository GIT che sarà un fork di questo progetto.

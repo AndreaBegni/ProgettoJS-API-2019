@@ -3,7 +3,7 @@
 1.
   1.1 Propositi
 
-Il proposito di questo documento è quello di specificare i requisiti dell'applicazione Progetto-TPI da noi creata per facilitarne
+Il proposito di questo documento è quello di specificare i requisiti dell'applicazione Weather Map da noi creata per facilitarne
 la realizzazione e la documentazione. Questo documento è redatto seguendo le indicazioni contenute nel documento IEEE Std 830-1993.
 
 1.
@@ -36,7 +36,7 @@ gli obiettivi espressi al punto 1.2.
 
 2.2 Funzionalità del prodotto
 
- Il software Progetto-TPI deve:
+ Il software Weather Map deve:
 
 - Visualizzare la mappa;
 - Far scegliere la città da visualizzare;
@@ -48,7 +48,7 @@ gli obiettivi espressi al punto 1.2.
 
 2.3 Caratteristiche utente
 
-Il sistema software Progetto-TPI è rivolto ad un'utenza ampia senza necessariamente con conoscenze in ambito informatico.
+Il sistema software Weather Map è rivolto ad un'utenza ampia senza necessariamente con conoscenze in ambito informatico.
 
  2.4 Vincoli
 

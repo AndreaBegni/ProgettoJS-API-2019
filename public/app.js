@@ -1,5 +1,5 @@
-const rowDate = document.getElementById('date')
 const rowCityName = document.getElementById('cityName')
+const rowDate = document.getElementById('date')
 const rowTemperature = document.getElementById('temperature')
 const rowMaxTemperature = document.getElementById('maxTemperature')
 const rowMinTemperature = document.getElementById('minTemperature')
@@ -15,8 +15,10 @@ const weatherButton = document.getElementById('weatherButton')
 const cityFilter = document.getElementById('cityFilter')
 const token = '{mapboxToken}' //insert your mapbox token here
 
-var mymap = L.map('mapid').setView([45.54, 10.22], 15); //create a map and set the view to lat 45.54 and lon 10.22
+//create a map and set the view to lat 45.54 and lon 10.22
+var mymap = L.map('mapid').setView([45.54, 10.22], 15);
 
+//fill the map div with the actual map and set it to the mymap coordinates and zoom
 L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=' + token, {
     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
     maxZoom: 20,
@@ -41,8 +43,8 @@ function centerView(lat, lon) {
 }
 
 function insertDataIntoTable(body, date) {
-    rowDate.innerHTML = date.formatted
     rowCityName.innerHTML = cityFilter.value.toUpperCase()
+    rowDate.innerHTML = date.formatted
     rowTemperature.innerHTML = (body.main.temp - 273.15).toFixed(2) + "°C"
     rowMaxTemperature.innerHTML = (body.main.temp_max - 273.15).toFixed(2) + "°C"
     rowMinTemperature.innerHTML = (body.main.temp_min - 273.15).toFixed(2) + "°C"
@@ -57,6 +59,8 @@ const loadWeather = async() => {
         centerView(body.coord.lat, body.coord.lon)
         let date = await fetch(dateAPI + 'lat=' + body.coord.lat + '&lng=' + body.coord.lon).then(data => data.json())
         insertDataIntoTable(body, date)
+    } else {
+        rowCityName.innerHTML = 'City not found'
     }
 }
 
